@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "331945373832",
+    "firebase_url": "https://svce-pro-26e5f.firebaseio.com",
+    "project_id": "svce-pro-26e5f",
+    "storage_bucket": "svce-pro-26e5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331945373832:android:c913177cdd24ea2b",
+        "android_client_info": {
+          "package_name": "com.svce.svcepro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "331945373832-290pr6ldcljaqb57tg9rc8et089f4vjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0yjg1ptmLzZaavsRtc2_S8_EgGv4M3rA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

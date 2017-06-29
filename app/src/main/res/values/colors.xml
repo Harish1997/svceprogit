@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#298dff</color>
+    <color name="colorPrimaryDark">#4256d9</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="black">#006ca5</color>
+    <color name="orange">#ffaa00</color>
+    <color name="white">#ffffff</color>
+    <color name="buttonlight">#53ffffff</color>
+    <color name="newc">#0a0a0a</color>
+    <color name="frage">#d1d2d3</color>
+    <color name="bgcol">#ffffff</color>
+    <color name="dev">#0aaaff</color>
+</resources>
