@@ -217,7 +217,13 @@ public class testfauto extends Fragment{
                         Toast.makeText(getActivity(),"third",Toast.LENGTH_SHORT).show();
                         switch (position) {
                             case 0: {
-                                Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
+                              //  Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), ttday.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 1: {
@@ -364,7 +370,13 @@ public class testfauto extends Fragment{
                     case 5: {
                         switch (position) {
                             case 0: {
-                                Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
+                               // Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), ttday.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 1: {
@@ -513,8 +525,13 @@ public class testfauto extends Fragment{
                     case 7: {
                         switch (position) {
                             case 0: {
-                                Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
-
+                                //Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), ttday.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 1: {

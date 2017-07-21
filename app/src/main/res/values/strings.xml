@@ -6,4 +6,31 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="facebook_app_id">326854714451453</string>
+    <string name="slide_1_title">Hello !</string>
+    <string name="slide_1_desc">The easiest way to access timetables,notes and question papers</string>
+    <string name="server_client_id"> 331945373832-pt5t90bth3p7b2a02be5muf0j1nqhqnf.apps.googleusercontent.com </string>
+
+    <string name="slide_2_title">Pick your choice</string>
+    <string name="slide_2_desc">Narrow down choices with ease based on our category search!</string>
+
+    <string name="slide_3_title">Realtime News Feed</string>
+    <string name="slide_3_desc">Svce Pro offers free around the clock News Feed to ensure that you always stay connected</string>
+
+    <string name="slide_4_title">Get Notified !</string>
+    <string name="slide_4_desc">Get notified about all activities,clubs and events in SVCE</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="sendPhoto">Photo Camera</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="select_picture_title">Get Photo From</string>
+    <string name="sendPhotoGallery">Photo Gallery</string>
+    <string name="api_key_google_places">AIzaSyBisbsq9wIW8Q2Isj033c3wXqtTBRyaRBA</string>
+    <string name="sendLocation">Send Location</string>
+    <string name="locationTo">Localização Enviada</string>
+
 </resources>

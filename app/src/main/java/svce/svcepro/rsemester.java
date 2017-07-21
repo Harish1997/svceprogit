@@ -100,7 +100,7 @@ public class rsemester extends AppCompatActivity {
                         switch (position)
                         {
                             case 1:
-                                Toast.makeText(rsemester.this,"item one long",Toast.LENGTH_SHORT).show();
+                               // Toast.makeText(rsemester.this,"item one long",Toast.LENGTH_SHORT).show();
                                 break;
                         }
                         // do whatever

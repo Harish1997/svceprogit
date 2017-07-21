@@ -39,10 +39,12 @@ public class PrimaryFragment extends Fragment{
 
         List<data> data = fill_with_data();
 
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerview);
+        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerviewcat);
         Recycler_View_Adapter adapter = new Recycler_View_Adapter(data, getActivity());
         recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        LinearLayoutManager horizontalLayoutManagaer
+                = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
+        recyclerView.setLayoutManager(horizontalLayoutManagaer);
 
         RecyclerView.ItemAnimator itemAnimator = new DefaultItemAnimator();
         itemAnimator.setAddDuration(1000);
@@ -106,6 +108,46 @@ public class PrimaryFragment extends Fragment{
                     }
                 })
         );
+
+        {
+            List<svceimgdata> svceimgdatas = fill_with_dataimg();
+
+            RecyclerView recyclerView2 = (RecyclerView)view.findViewById(R.id.recyclerviewimg);
+            svceimgrecyadapter adapter2 = new svceimgrecyadapter(svceimgdatas,getActivity());
+            recyclerView2.setAdapter(adapter2);
+            LinearLayoutManager horizontalLayoutManagaer2
+                    = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
+            recyclerView2.setLayoutManager(horizontalLayoutManagaer2);
+
+
+            RecyclerView.ItemAnimator itemAnimator2 = new DefaultItemAnimator();
+            itemAnimator2.setAddDuration(1000);
+            itemAnimator2.setRemoveDuration(1000);
+            recyclerView2.setItemAnimator(itemAnimator);
+
+            recyclerView2.addOnItemTouchListener(
+                    new RecyclerItemClickListener(getActivity(), recyclerView2 ,new RecyclerItemClickListener.OnItemClickListener() {
+                        @Override public void onItemClick(View view, int position) {
+                            switch (position)
+                            {
+
+                            }
+                            // do whatever
+                        }
+
+                        @Override public void onLongItemClick(View view, int position) {
+                            switch (position)
+                            {
+                                case 1:
+                                    //Toast.makeText(getActivity(),"item one long",Toast.LENGTH_SHORT).show();
+                                    break;
+                            }
+                            // do whatever
+                        }
+                    })
+            );
+
+        }
         return view;
 
     }
@@ -122,6 +164,23 @@ public class PrimaryFragment extends Fragment{
         data.add(new data("Developers", "Three fundamental aspects for software development Lazy,Simple and Perfect", R.drawable.smp));
         data.add(new data("Bus Routes", "Two roads diverged in a wood and I took the one less travelled by and that has made all the difference", R.drawable.busroute));
         data.add(new data("Be a developer", "Innovation distinguishes between a leader and a follower", R.drawable.bedev));
+        return data;
+    }
+
+    public List<svceimgdata> fill_with_dataimg() {
+
+        List<svceimgdata> data = new ArrayList<>();
+
+
+        data.add(new svceimgdata("Abacus Montessori", R.drawable.svce));
+        data.add(new svceimgdata("St.Michael's Academy", R.drawable.svceentrance));
+        data.add(new svceimgdata("St Francis International", R.drawable.svceold));
+        data.add(new svceimgdata("Vael's Billabong High International", R.drawable.svceaudit));
+        data.add(new svceimgdata("The School - KFI", R.drawable.svcehostel));
+        data.add(new svceimgdata("Sishya School", R.drawable.svcebuil));
+        data.add(new svceimgdata("Chettinad Hari Shree Vidyalam", R.drawable.svcecir));
+
+
         return data;
     }
 

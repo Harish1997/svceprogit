@@ -217,6 +217,12 @@ public class testfchema extends Fragment{
                         switch (position) {
                             case 0: {
                                 Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), facultyadv.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 1: {
@@ -360,6 +366,12 @@ public class testfchema extends Fragment{
                         switch (position) {
                             case 0: {
                                 Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), facultyadv.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 1: {
@@ -509,7 +521,12 @@ public class testfchema extends Fragment{
                         switch (position) {
                             case 0: {
                                 Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
-
+                                Intent newint = new Intent(getActivity(), facultyadv.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 1: {

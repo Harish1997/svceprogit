@@ -32,7 +32,9 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".display">
+        <activity android:name=".display"/>
+        <activity android:name=".Displaycred"/>
+        <activity android:name=".Login">
             <intent-filter>
                 <action android:name="com.svce.svcepro.MESSAGE" />
 
@@ -44,6 +46,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service
+            android:name=".MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
         <service android:name=".RssService" />
         <activity android:name=".navandtab" />
         <activity android:name=".bout" />
@@ -117,6 +136,7 @@
         <activity android:name=".wfmechbone" />
         <activity android:name=".wfmechbtwo" />
         <activity android:name=".aboutcollege" />
+        <activity android:name=".opennotif"/>
         <activity android:name=".webloader" />
         <activity android:name=".teacherlist" />
         <activity android:name=".userins" />
@@ -164,6 +184,7 @@
         <activity android:name=".foodcourt"/>
         <activity android:name=".ccd"/>
         <activity android:name=".maincantlist"/>
+        <activity android:name=".WelcomeActivity"/>
     </application>
 
 </manifest>
